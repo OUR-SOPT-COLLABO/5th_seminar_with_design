@@ -25,6 +25,7 @@
 		A149C498247A141400F95E02 /* StoreReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C496247A141400F95E02 /* StoreReviewTableViewCell.swift */; };
 		A149C499247A141400F95E02 /* StoreReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A149C497247A141400F95E02 /* StoreReviewTableViewCell.xib */; };
 		A149C49B247A31B900F95E02 /* PicViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C49A247A31B900F95E02 /* PicViewViewController.swift */; };
+		A165CCC22480C244009A047A /* Stylingpriviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCC12480C244009A047A /* Stylingpriviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A149C496247A141400F95E02 /* StoreReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreReviewTableViewCell.swift; sourceTree = "<group>"; };
 		A149C497247A141400F95E02 /* StoreReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreReviewTableViewCell.xib; sourceTree = "<group>"; };
 		A149C49A247A31B900F95E02 /* PicViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicViewViewController.swift; sourceTree = "<group>"; };
+		A165CCC12480C244009A047A /* Stylingpriviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylingpriviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				A149C4872479FEF400F95E02 /* Store.storyboard */,
 				A149C48F247A134700F95E02 /* StoreITemTableViewCell.xib */,
 				A149C493247A13B000F95E02 /* StoreStylingShotTableViewCell.xib */,
+				A10891812480AD7F005EFE08 /* StylingshotCell.xib */,
 				A149C497247A141400F95E02 /* StoreReviewTableViewCell.xib */,
 				06CCAA32247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib */,
 				A149C47A2479FE4200F95E02 /* Assets.xcassets */,
@@ -187,6 +190,7 @@
 			files = (
 				A149C491247A134700F95E02 /* StoreITemTableViewCell.xib in Resources */,
 				A149C4862479FED900F95E02 /* Picview.storyboard in Resources */,
+				A10891832480AD7F005EFE08 /* StylingshotCell.xib in Resources */,
 				A149C47E2479FE4200F95E02 /* LaunchScreen.storyboard in Resources */,
 				A149C4882479FEF400F95E02 /* Store.storyboard in Resources */,
 				A149C47B2479FE4200F95E02 /* Assets.xcassets in Resources */,
@@ -208,7 +212,9 @@
 				A149C48D247A111B00F95E02 /* StoreViewController.swift in Sources */,
 				A149C490247A134700F95E02 /* StoreITemTableViewCell.swift in Sources */,
 				A149C4762479FE4100F95E02 /* ViewController.swift in Sources */,
+				A165CCC22480C244009A047A /* Stylingpriviews.swift in Sources */,
 				A149C4722479FE4100F95E02 /* AppDelegate.swift in Sources */,
+				A10891822480AD7F005EFE08 /* StylingshotCell.swift in Sources */,
 				A149C49B247A31B900F95E02 /* PicViewViewController.swift in Sources */,
 				A149C498247A141400F95E02 /* StoreReviewTableViewCell.swift in Sources */,
 				A149C494247A13B000F95E02 /* StoreStylingShotTableViewCell.swift in Sources */,
