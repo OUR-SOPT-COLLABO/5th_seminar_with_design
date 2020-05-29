@@ -28,6 +28,9 @@
 		A165CCCA24811E77009A047A /* StylingshotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A165CCC924811E77009A047A /* StylingshotCell.xib */; };
 		A165CCCD24811E97009A047A /* Stylingpriviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCCB24811E97009A047A /* Stylingpriviews.swift */; };
 		A165CCCE24811E97009A047A /* StylingshotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCCC24811E97009A047A /* StylingshotCell.swift */; };
+		A165CCD1248153F8009A047A /* PicViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCCF248153F8009A047A /* PicViewTableViewCell.swift */; };
+		A165CCD2248153F8009A047A /* KeywordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCD0248153F8009A047A /* KeywordCell.swift */; };
+		A165CCD4248153FF009A047A /* RoomInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCD3248153FF009A047A /* RoomInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		A165CCC924811E77009A047A /* StylingshotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StylingshotCell.xib; sourceTree = "<group>"; };
 		A165CCCB24811E97009A047A /* Stylingpriviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylingpriviews.swift; sourceTree = "<group>"; };
 		A165CCCC24811E97009A047A /* StylingshotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylingshotCell.swift; sourceTree = "<group>"; };
+		A165CCCF248153F8009A047A /* PicViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicViewTableViewCell.swift; sourceTree = "<group>"; };
+		A165CCD0248153F8009A047A /* KeywordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeywordCell.swift; sourceTree = "<group>"; };
+		A165CCD3248153FF009A047A /* RoomInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 		A149C48B2479FF3A00F95E02 /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				A165CCD3248153FF009A047A /* RoomInformation.swift */,
+				A165CCD0248153F8009A047A /* KeywordCell.swift */,
+				A165CCCF248153F8009A047A /* PicViewTableViewCell.swift */,
 				A149C4752479FE4100F95E02 /* ViewController.swift */,
 				A149C49A247A31B900F95E02 /* PicViewViewController.swift */,
 				A149C48C247A111B00F95E02 /* StoreViewController.swift */,
@@ -217,10 +226,13 @@
 				06CCAA33247D53E900E04C39 /* StoreReviewTableViewSecondCell.swift in Sources */,
 				A149C48D247A111B00F95E02 /* StoreViewController.swift in Sources */,
 				A149C490247A134700F95E02 /* StoreITemTableViewCell.swift in Sources */,
+				A165CCD2248153F8009A047A /* KeywordCell.swift in Sources */,
 				A149C4762479FE4100F95E02 /* ViewController.swift in Sources */,
+				A165CCD4248153FF009A047A /* RoomInformation.swift in Sources */,
 				A165CCCE24811E97009A047A /* StylingshotCell.swift in Sources */,
 				A149C4722479FE4100F95E02 /* AppDelegate.swift in Sources */,
 				A149C49B247A31B900F95E02 /* PicViewViewController.swift in Sources */,
+				A165CCD1248153F8009A047A /* PicViewTableViewCell.swift in Sources */,
 				A165CCCD24811E97009A047A /* Stylingpriviews.swift in Sources */,
 				A149C498247A141400F95E02 /* StoreReviewTableViewCell.swift in Sources */,
 				A149C494247A13B000F95E02 /* StoreStylingShotTableViewCell.swift in Sources */,
