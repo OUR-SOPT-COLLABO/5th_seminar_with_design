@@ -98,9 +98,9 @@
 				A149C48F247A134700F95E02 /* StoreITemTableViewCell.xib */,
 				A149C493247A13B000F95E02 /* StoreStylingShotTableViewCell.xib */,
 				A149C497247A141400F95E02 /* StoreReviewTableViewCell.xib */,
+				06CCAA32247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib */,
 				A149C47A2479FE4200F95E02 /* Assets.xcassets */,
 				A149C47C2479FE4200F95E02 /* LaunchScreen.storyboard */,
-				06CCAA32247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
