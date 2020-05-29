@@ -21,5 +21,6 @@ class StylingshotCell: UICollectionViewCell {
     @IBAction func selectedPriview(_ sender: UIButton) {
         selectedImgBtn.isSelected = !selectedImgBtn.isSelected
         selectedImgBtn.imageView?.contentMode = .scaleAspectFill
+        
     }
 }

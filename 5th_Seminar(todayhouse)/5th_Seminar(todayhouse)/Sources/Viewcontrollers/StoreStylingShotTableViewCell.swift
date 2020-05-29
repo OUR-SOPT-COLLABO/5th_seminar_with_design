@@ -11,7 +11,6 @@ import UIKit
 class StoreStylingShotTableViewCell: UITableViewCell {
     
     @IBOutlet weak var StylingshotCV: UICollectionView!
-    
     @IBOutlet weak var stylingbigImg: UIImageView!
     
     var stylingpriviewList: [Stylingpriviews] = []
@@ -60,6 +59,7 @@ class StoreStylingShotTableViewCell: UITableViewCell {
        
         stylingpriviewList = [styling1, styling2, styling3, styling4, styling5, styling6, styling7, styling8]
     }
+    
     
 }
 
