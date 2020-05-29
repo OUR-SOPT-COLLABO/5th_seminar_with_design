@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1334B9DE2480F4A000A9981A /* StoreItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334B9DC2480F4A000A9981A /* StoreItemCollectionCell.swift */; };
+		1334B9DF2480F4A000A9981A /* StoreItemCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1334B9DD2480F4A000A9981A /* StoreItemCollectionCell.xib */; };
+		1334B9E2248110FF00A9981A /* StoreItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334B9E0248110FF00A9981A /* StoreItemCollectionViewCell.swift */; };
+		1334B9E3248110FF00A9981A /* StoreItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1334B9E1248110FF00A9981A /* StoreItemCollectionViewCell.xib */; };
 		A149C4722479FE4100F95E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C4712479FE4100F95E02 /* AppDelegate.swift */; };
 		A149C4742479FE4100F95E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C4732479FE4100F95E02 /* SceneDelegate.swift */; };
 		A149C4762479FE4100F95E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C4752479FE4100F95E02 /* ViewController.swift */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1334B9DC2480F4A000A9981A /* StoreItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemCollectionCell.swift; sourceTree = "<group>"; };
+		1334B9DD2480F4A000A9981A /* StoreItemCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreItemCollectionCell.xib; sourceTree = "<group>"; };
+		1334B9E0248110FF00A9981A /* StoreItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		1334B9E1248110FF00A9981A /* StoreItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		A149C46E2479FE4100F95E02 /* 5th_Seminar(todayhouse).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "5th_Seminar(todayhouse).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A149C4712479FE4100F95E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A149C4732479FE4100F95E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 				A149C4852479FED900F95E02 /* Picview.storyboard */,
 				A149C4872479FEF400F95E02 /* Store.storyboard */,
 				A149C48F247A134700F95E02 /* StoreITemTableViewCell.xib */,
+				1334B9DD2480F4A000A9981A /* StoreItemCollectionCell.xib */,
 				A149C493247A13B000F95E02 /* StoreStylingShotTableViewCell.xib */,
 				A149C497247A141400F95E02 /* StoreReviewTableViewCell.xib */,
 				A149C47A2479FE4200F95E02 /* Assets.xcassets */,
@@ -115,6 +124,9 @@
 				A149C49A247A31B900F95E02 /* PicViewViewController.swift */,
 				A149C48C247A111B00F95E02 /* StoreViewController.swift */,
 				A149C48E247A134700F95E02 /* StoreITemTableViewCell.swift */,
+				1334B9DC2480F4A000A9981A /* StoreItemCollectionCell.swift */,
+				1334B9E0248110FF00A9981A /* StoreItemCollectionViewCell.swift */,
+				1334B9E1248110FF00A9981A /* StoreItemCollectionViewCell.xib */,
 				A149C492247A13B000F95E02 /* StoreStylingShotTableViewCell.swift */,
 				A149C496247A141400F95E02 /* StoreReviewTableViewCell.swift */,
 			);
@@ -181,6 +193,8 @@
 			files = (
 				A149C491247A134700F95E02 /* StoreITemTableViewCell.xib in Resources */,
 				A149C4862479FED900F95E02 /* Picview.storyboard in Resources */,
+				1334B9DF2480F4A000A9981A /* StoreItemCollectionCell.xib in Resources */,
+				1334B9E3248110FF00A9981A /* StoreItemCollectionViewCell.xib in Resources */,
 				A149C47E2479FE4200F95E02 /* LaunchScreen.storyboard in Resources */,
 				A149C4882479FEF400F95E02 /* Store.storyboard in Resources */,
 				A149C47B2479FE4200F95E02 /* Assets.xcassets in Resources */,
@@ -202,6 +216,8 @@
 				A149C4762479FE4100F95E02 /* ViewController.swift in Sources */,
 				A149C4722479FE4100F95E02 /* AppDelegate.swift in Sources */,
 				A149C49B247A31B900F95E02 /* PicViewViewController.swift in Sources */,
+				1334B9E2248110FF00A9981A /* StoreItemCollectionViewCell.swift in Sources */,
+				1334B9DE2480F4A000A9981A /* StoreItemCollectionCell.swift in Sources */,
 				A149C498247A141400F95E02 /* StoreReviewTableViewCell.swift in Sources */,
 				A149C494247A13B000F95E02 /* StoreStylingShotTableViewCell.swift in Sources */,
 				A149C4742479FE4100F95E02 /* SceneDelegate.swift in Sources */,
