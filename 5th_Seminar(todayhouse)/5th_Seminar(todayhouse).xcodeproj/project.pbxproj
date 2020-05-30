@@ -104,16 +104,9 @@
 		A149C4892479FF0400F95E02 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A149C4772479FE4100F95E02 /* Main.storyboard */,
-				A149C4852479FED900F95E02 /* Picview.storyboard */,
-				A149C4872479FEF400F95E02 /* Store.storyboard */,
-				A149C48F247A134700F95E02 /* StoreITemTableViewCell.xib */,
-				A149C493247A13B000F95E02 /* StoreStylingShotTableViewCell.xib */,
-				A165CCC924811E77009A047A /* StylingshotCell.xib */,
-				A149C497247A141400F95E02 /* StoreReviewTableViewCell.xib */,
-				06CCAA32247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib */,
+				A1A0BCAE248218E200CAA4A0 /* Storyboards */,
+				A1A0BCAD248218D300CAA4A0 /* APIServices */,
 				A149C47A2479FE4200F95E02 /* Assets.xcassets */,
-				A149C47C2479FE4200F95E02 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -121,6 +114,9 @@
 		A149C48A2479FF1900F95E02 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A1A0BCAA2482189C00CAA4A0 /* Cell */,
+				A1A0BCAB248218A600CAA4A0 /* Model */,
+				A1A0BCAC248218B000CAA4A0 /* Extensions */,
 				A149C48B2479FF3A00F95E02 /* Viewcontrollers */,
 			);
 			path = Sources;
@@ -129,20 +125,64 @@
 		A149C48B2479FF3A00F95E02 /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				A165CCD3248153FF009A047A /* RoomInformation.swift */,
-				A165CCD0248153F8009A047A /* KeywordCell.swift */,
-				A165CCCF248153F8009A047A /* PicViewTableViewCell.swift */,
 				A149C4752479FE4100F95E02 /* ViewController.swift */,
 				A149C49A247A31B900F95E02 /* PicViewViewController.swift */,
 				A149C48C247A111B00F95E02 /* StoreViewController.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		A1A0BCAA2482189C00CAA4A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A165CCD0248153F8009A047A /* KeywordCell.swift */,
+				A165CCCF248153F8009A047A /* PicViewTableViewCell.swift */,
 				A149C48E247A134700F95E02 /* StoreITemTableViewCell.swift */,
 				A149C492247A13B000F95E02 /* StoreStylingShotTableViewCell.swift */,
 				A165CCCC24811E97009A047A /* StylingshotCell.swift */,
-				A165CCCB24811E97009A047A /* Stylingpriviews.swift */,
 				A149C496247A141400F95E02 /* StoreReviewTableViewCell.swift */,
 				06CCAA31247D53E900E04C39 /* StoreReviewTableViewSecondCell.swift */,
 			);
-			path = Viewcontrollers;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A1A0BCAB248218A600CAA4A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A165CCD3248153FF009A047A /* RoomInformation.swift */,
+				A165CCCB24811E97009A047A /* Stylingpriviews.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1A0BCAC248218B000CAA4A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1A0BCAD248218D300CAA4A0 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		A1A0BCAE248218E200CAA4A0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A149C4772479FE4100F95E02 /* Main.storyboard */,
+				A149C4852479FED900F95E02 /* Picview.storyboard */,
+				A149C4872479FEF400F95E02 /* Store.storyboard */,
+				A149C48F247A134700F95E02 /* StoreITemTableViewCell.xib */,
+				A149C493247A13B000F95E02 /* StoreStylingShotTableViewCell.xib */,
+				A165CCC924811E77009A047A /* StylingshotCell.xib */,
+				A149C497247A141400F95E02 /* StoreReviewTableViewCell.xib */,
+				06CCAA32247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib */,
+				A149C47C2479FE4200F95E02 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

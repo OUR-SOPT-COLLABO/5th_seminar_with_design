@@ -65,6 +65,8 @@ class StoreViewController: UIViewController {
             else if indexPath.section == 1 {
                 if indexPath.row == 0 {
                     guard let storestylingshotCell = tableView.dequeueReusableCell(withIdentifier: "StoreStylingShotCell", for: indexPath) as? StoreStylingShotTableViewCell else { return UITableViewCell() }
+                    
+                    //storestylingshotCell.stylingbigImg.image = UIImage(named: <#T##String#>)
                     return storestylingshotCell
                 }
             }
