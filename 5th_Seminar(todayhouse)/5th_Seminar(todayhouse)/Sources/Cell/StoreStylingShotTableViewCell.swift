@@ -70,8 +70,10 @@ extension StoreStylingShotTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = StylingshotCV.dequeueReusableCell(withReuseIdentifier: "stylingshotCell", for: indexPath) as? StylingshotCell {
+            
             cell.stylingpriviewImg.image = UIImage(named: stylingpriviewList[indexPath.row].stylingpriviewImg)
             return cell
+            
         }
         return UICollectionViewCell()
     }
