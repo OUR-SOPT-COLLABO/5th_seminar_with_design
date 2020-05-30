@@ -31,6 +31,8 @@
 		A165CCD1248153F8009A047A /* PicViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCCF248153F8009A047A /* PicViewTableViewCell.swift */; };
 		A165CCD2248153F8009A047A /* KeywordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCD0248153F8009A047A /* KeywordCell.swift */; };
 		A165CCD4248153FF009A047A /* RoomInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A165CCD3248153FF009A047A /* RoomInformation.swift */; };
+		A1A0BCB224826CD800CAA4A0 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BCB124826CD800CAA4A0 /* NetworkResult.swift */; };
+		A1A0BCB424826D0400CAA4A0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0BCB324826D0400CAA4A0 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		A165CCCF248153F8009A047A /* PicViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicViewTableViewCell.swift; sourceTree = "<group>"; };
 		A165CCD0248153F8009A047A /* KeywordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeywordCell.swift; sourceTree = "<group>"; };
 		A165CCD3248153FF009A047A /* RoomInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomInformation.swift; sourceTree = "<group>"; };
+		A1A0BCB124826CD800CAA4A0 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		A1A0BCB324826D0400CAA4A0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 		A1A0BCAD248218D300CAA4A0 /* APIServices */ = {
 			isa = PBXGroup;
 			children = (
+				A1A0BCB124826CD800CAA4A0 /* NetworkResult.swift */,
+				A1A0BCB324826D0400CAA4A0 /* APIConstants.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -267,8 +273,10 @@
 				A149C48D247A111B00F95E02 /* StoreViewController.swift in Sources */,
 				A149C490247A134700F95E02 /* StoreITemTableViewCell.swift in Sources */,
 				A165CCD2248153F8009A047A /* KeywordCell.swift in Sources */,
+				A1A0BCB424826D0400CAA4A0 /* APIConstants.swift in Sources */,
 				A149C4762479FE4100F95E02 /* ViewController.swift in Sources */,
 				A165CCD4248153FF009A047A /* RoomInformation.swift in Sources */,
+				A1A0BCB224826CD800CAA4A0 /* NetworkResult.swift in Sources */,
 				A165CCCE24811E97009A047A /* StylingshotCell.swift in Sources */,
 				A149C4722479FE4100F95E02 /* AppDelegate.swift in Sources */,
 				A149C49B247A31B900F95E02 /* PicViewViewController.swift in Sources */,
