@@ -7,38 +7,50 @@
 //
 
 import Foundation
-
+// ~/sell/:id 와 ~/sell 에 해당
 struct StoreReviewData: Codable {
     var status: Int
     var success: Bool
-    
-    var reviewIndex : Int
-    var userIndex : Int
-    var sellIndex : Int
-    var content : String
-    var createdAt : String
-    var imgUrl : String
+    var message: String
+    var data: Data?
     
     enum CodingKeys: String, CodingKey {
         case status = "status"
         case success = "success"
-        case reviewIndex  = "reviewIndex"
-        case userIndex = "userIndex"
-        case sellIndex = "sellIndex"
-        case content = "content"
-        case createdAt = "createdAt"
-        case imgUrl = "imgUrl"
+        case message = "message"
+        case data = "data"
     }
      
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         status = (try? values.decode(Int.self, forKey: .status)) ?? -1
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
-        reviewIndex  = (try? values.decode(Int.self, forKey: .reviewIndex )) ?? -1
-        userIndex  = (try? values.decode(Int.self, forKey: .userIndex )) ?? -1
-        sellIndex  = (try? values.decode(Int.self, forKey: .sellIndex )) ?? -1
-        content  = (try? values.decode(String.self, forKey: .content )) ?? ""
-        createdAt  = (try? values.decode(String.self, forKey: .createdAt )) ?? ""
-        imgUrl  = (try? values.decode(String.self, forKey: .imgUrl )) ?? ""
+        message = (try? values.decode(String.self, forKey: .message )) ?? ""
+        data = (try? values.decode(Data.self, forKey: .data )) ?? nil
     }
 }
+
+struct Data: Codable {
+    var category : String
+    var company : String
+    var title : String
+    var price : String
+    var discount : String
+    var imgs : [Imgs]?
+    var reviews : [Reviews]?
+    
+}
+
+struct Imgs: Codable {
+    var imgUrl : String
+}
+
+struct Reviews: Codable {
+    var imgUrl : String
+    var profileImgUrl : String
+    var name : String
+    var createdAt : String
+    var content : String
+}
+
+
