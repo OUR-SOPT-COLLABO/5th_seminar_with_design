@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		06CCAA33247D53E900E04C39 /* StoreReviewTableViewSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCAA31247D53E900E04C39 /* StoreReviewTableViewSecondCell.swift */; };
 		06CCAA34247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06CCAA32247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib */; };
+		1857C2CE248F93E90019450B /* PicviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857C2CD248F93E90019450B /* PicviewService.swift */; };
+		18B422A5248F8A5500E1D833 /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B422A4248F8A5500E1D833 /* RoomDetail.swift */; };
+		18B422A7248F8AC300E1D833 /* RoomDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B422A6248F8AC300E1D833 /* RoomDetailCell.swift */; };
+		18B422A9248F8CFC00E1D833 /* PicviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B422A8248F8CFC00E1D833 /* PicviewData.swift */; };
 		A149C4722479FE4100F95E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C4712479FE4100F95E02 /* AppDelegate.swift */; };
 		A149C4742479FE4100F95E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C4732479FE4100F95E02 /* SceneDelegate.swift */; };
 		A149C4762479FE4100F95E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149C4752479FE4100F95E02 /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 		06CCAA31247D53E900E04C39 /* StoreReviewTableViewSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreReviewTableViewSecondCell.swift; sourceTree = "<group>"; };
 		06CCAA32247D53E900E04C39 /* StoreReviewTableViewSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreReviewTableViewSecondCell.xib; sourceTree = "<group>"; };
 		0E89ADDF8B1E437F4351C83A /* Pods-5th_Seminar(todayhouse).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5th_Seminar(todayhouse).release.xcconfig"; path = "Target Support Files/Pods-5th_Seminar(todayhouse)/Pods-5th_Seminar(todayhouse).release.xcconfig"; sourceTree = "<group>"; };
+		1857C2CD248F93E90019450B /* PicviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicviewService.swift; sourceTree = "<group>"; };
+		18B422A4248F8A5500E1D833 /* RoomDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
+		18B422A6248F8AC300E1D833 /* RoomDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailCell.swift; sourceTree = "<group>"; };
+		18B422A8248F8CFC00E1D833 /* PicviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicviewData.swift; sourceTree = "<group>"; };
 		9AB79FA4A48B6E4F00F5DD2F /* Pods_5th_Seminar_todayhouse_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5th_Seminar_todayhouse_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A149C46E2479FE4100F95E02 /* 5th_Seminar(todayhouse).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "5th_Seminar(todayhouse).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A149C4712479FE4100F95E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +180,7 @@
 				A165CCCC24811E97009A047A /* StylingshotCell.swift */,
 				A149C496247A141400F95E02 /* StoreReviewTableViewCell.swift */,
 				06CCAA31247D53E900E04C39 /* StoreReviewTableViewSecondCell.swift */,
+				18B422A6248F8AC300E1D833 /* RoomDetailCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 			children = (
 				A165CCD3248153FF009A047A /* RoomInformation.swift */,
 				A165CCCB24811E97009A047A /* Stylingpriviews.swift */,
+				18B422A4248F8A5500E1D833 /* RoomDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 				A1A0BCB124826CD800CAA4A0 /* NetworkResult.swift */,
 				A1A0BCB324826D0400CAA4A0 /* APIConstants.swift */,
 				A1A185CD248CE67A00A76670 /* StoreReviewData.swift */,
+				18B422A8248F8CFC00E1D833 /* PicviewData.swift */,
+				1857C2CD248F93E90019450B /* PicviewService.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -345,12 +357,16 @@
 				A149C490247A134700F95E02 /* StoreITemTableViewCell.swift in Sources */,
 				A165CCD2248153F8009A047A /* KeywordCell.swift in Sources */,
 				A1A0BCB424826D0400CAA4A0 /* APIConstants.swift in Sources */,
+				18B422A7248F8AC300E1D833 /* RoomDetailCell.swift in Sources */,
 				A149C4762479FE4100F95E02 /* ViewController.swift in Sources */,
 				A165CCD4248153FF009A047A /* RoomInformation.swift in Sources */,
 				A1A0BCB224826CD800CAA4A0 /* NetworkResult.swift in Sources */,
 				A1A185CE248CE67A00A76670 /* StoreReviewData.swift in Sources */,
+				1857C2CE248F93E90019450B /* PicviewService.swift in Sources */,
+				18B422A5248F8A5500E1D833 /* RoomDetail.swift in Sources */,
 				A165CCCE24811E97009A047A /* StylingshotCell.swift in Sources */,
 				A149C4722479FE4100F95E02 /* AppDelegate.swift in Sources */,
+				18B422A9248F8CFC00E1D833 /* PicviewData.swift in Sources */,
 				A149C49B247A31B900F95E02 /* PicViewViewController.swift in Sources */,
 				A165CCD1248153F8009A047A /* PicViewTableViewCell.swift in Sources */,
 				A165CCCD24811E97009A047A /* Stylingpriviews.swift in Sources */,

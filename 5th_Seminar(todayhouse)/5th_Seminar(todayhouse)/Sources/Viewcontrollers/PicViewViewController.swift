@@ -12,9 +12,11 @@ class PicViewViewController: UIViewController {
     
     @IBOutlet var searchField: UITextField!
     @IBOutlet var bookMark: UIButton!
+    @IBOutlet var lblshoppingCart: UILabel!
     @IBOutlet var shoppingCart: UIButton!
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
     private var btnKeywordList: [String] = []
     
     private var roomInformations: [RoomInformation] = []
@@ -124,6 +126,6 @@ extension PicViewViewController: UITableViewDataSource{
 
 extension PicViewViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 500
+        return 600
     }
 }
