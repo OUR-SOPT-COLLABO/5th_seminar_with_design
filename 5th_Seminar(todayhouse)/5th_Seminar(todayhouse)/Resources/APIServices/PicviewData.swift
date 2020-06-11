@@ -12,7 +12,7 @@ struct PicviewData: Codable{
     var status: Int
     var success: Bool
     var message: String
-    var data: RoomData?
+    var data: [DetailData]?
     
     enum CodingKeys: String, CodingKey{
         case status = "status"
@@ -26,12 +26,11 @@ struct PicviewData: Codable{
         status = (try? values.decode(Int.self, forKey: .status)) ?? -1
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message)) ?? ""
-        data = (try? values.decode(RoomData.self, forKey: .data)) ?? nil
+        data = (try? values.decode([DetailData].self, forKey: .data)) ?? nil
     }
 }
 
-struct RoomData: Codable{
-    var imgURL: String
+struct DetailData: Codable{
     var fname: String
     var desc: String
     var price: String
