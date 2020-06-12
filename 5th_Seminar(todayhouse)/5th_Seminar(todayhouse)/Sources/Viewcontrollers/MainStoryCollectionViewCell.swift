@@ -2,7 +2,7 @@
 //  MainStoryCollectionViewCell.swift
 //  5th_Seminar(todayhouse)
 //
-//  Created by 김지현 on 2020/06/11.
+//  Created by 김지현 on 2020/06/12.
 //  Copyright © 2020 hjyoo. All rights reserved.
 //
 
@@ -19,9 +19,9 @@ struct StoryData {
 class MainStoryCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "StoryCell"
     
-    @IBOutlet weak var storyImageView: UIButton!
+    @IBOutlet weak var storyImageView: UIImageView!
     
     func storySet(_ storyInformation: StoryData) {
-        storyImageView.setImage(storyInformation.storyImage, for: .normal)
+        storyImageView.image = storyInformation.storyImage
     }
 }

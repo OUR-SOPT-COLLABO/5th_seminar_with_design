@@ -2,7 +2,7 @@
 //  MainPopularCollectionViewCell.swift
 //  5th_Seminar(todayhouse)
 //
-//  Created by 김지현 on 2020/06/11.
+//  Created by 김지현 on 2020/06/12.
 //  Copyright © 2020 hjyoo. All rights reserved.
 //
 
@@ -19,11 +19,10 @@ struct PopularData {
 class MainPopularCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "PopularCell"
     
-    @IBOutlet weak var popularImageView: UIButton!
+    @IBOutlet weak var popularImageView: UIImageView!
     
     func popularSet(_ popularInformation: PopularData) {
-        popularImageView.setImage(popularInformation.popularImage, for: .normal)
+        popularImageView.image = popularInformation.popularImage
         //ImageNumLabel.text = popularInformation.imageNum
     }
 }
-
