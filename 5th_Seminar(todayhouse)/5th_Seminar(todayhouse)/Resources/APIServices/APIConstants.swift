@@ -9,9 +9,9 @@
 import Foundation
 
 struct APIConstants {
-    static let baseURL = "http://52.78.27.117:3000"
+    static let baseURL = "http://52.78.27.117:3001"
     static let bannerURL = APIConstants.baseURL + "/banner"
-    static let postURL = APIConstants.baseURL + "/post"
+    static let postURL = APIConstants.baseURL + "/post/3"
     static let poststoryURL = APIConstants.baseURL + "/post/story"
     static let postpopularURL = APIConstants.baseURL + "/post/popular"
     static let sellURL = APIConstants.baseURL + "/sell"
