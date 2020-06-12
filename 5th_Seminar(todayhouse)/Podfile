@@ -8,6 +8,5 @@ target '5th_Seminar(todayhouse)' do
   # Pods for 5th_Seminar(todayhouse)
   pod 'Alamofire', '~> 4.8.2' 
   pod ‘Kingfisher’, '~> 5.0'
-  pod 'SwiftyJSON', '~> 5.0.0'
 
 end
