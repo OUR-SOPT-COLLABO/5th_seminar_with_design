@@ -30,8 +30,8 @@ class StoreReviewTableViewSecondCell: UITableViewCell {
     
 }
 
-func reviewData(userame: String, reviewImage:String, reviewContents:String){
-    SRTVCuserName.text = userName
-    SRTVCreviewImg.image = UIImage(named:reviewImage)
-    SRTVCreviewContents.text = reviewContents
-}
+//func reviewData(userame: String, reviewImage:String, reviewContents:String){
+//    SRTVCuserName.text = userName
+//    SRTVCreviewImg.image = UIImage(named:reviewImage)
+//    SRTVCreviewContents.text = reviewContents
+//}
