@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    //
     @IBOutlet weak var topCollectionView: UICollectionView!
     @IBOutlet weak var storyCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
