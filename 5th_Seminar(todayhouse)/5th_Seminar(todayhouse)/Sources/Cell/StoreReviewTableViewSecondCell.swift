@@ -10,6 +10,13 @@ import UIKit
 
 class StoreReviewTableViewSecondCell: UITableViewCell {
 
+ 
+    @IBOutlet weak var SRTVCuserName: UILabel!
+    @IBOutlet weak var SRTVCreviewImg: UIImageView!
+    @IBOutlet weak var SRTVCreviewContents: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +28,10 @@ class StoreReviewTableViewSecondCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+
+func reviewData(userame: String, reviewImage:String, reviewContents:String){
+    SRTVCuserName.text = userName
+    SRTVCreviewImg.image = UIImage(named:reviewImage)
+    SRTVCreviewContents.text = reviewContents
 }

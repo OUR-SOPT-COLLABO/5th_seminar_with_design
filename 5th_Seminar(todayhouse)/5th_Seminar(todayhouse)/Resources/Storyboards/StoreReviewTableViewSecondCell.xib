@@ -139,6 +139,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="SRTVCreviewContents" destination="OW1-Gn-GP8" id="aOj-Iu-AMV"/>
+                <outlet property="SRTVCreviewImg" destination="fqg-fg-1uK" id="eNb-ew-TdM"/>
+                <outlet property="SRTVCuserName" destination="A0q-Ef-5QZ" id="qba-JP-5bO"/>
+            </connections>
             <point key="canvasLocation" x="78.985507246376812" y="50.892857142857139"/>
         </tableViewCell>
     </objects>
