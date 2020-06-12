@@ -55,7 +55,7 @@
                 <outlet property="selectedImgBtn" destination="CP0-cd-5yI" id="ROG-C9-uIp"/>
                 <outlet property="stylingpriviewImg" destination="8on-tz-ijq" id="HxG-gS-4Mh"/>
             </connections>
-            <point key="canvasLocation" x="139" y="122"/>
+            <point key="canvasLocation" x="138.40579710144928" y="121.54017857142857"/>
         </collectionViewCell>
     </objects>
     <resources>

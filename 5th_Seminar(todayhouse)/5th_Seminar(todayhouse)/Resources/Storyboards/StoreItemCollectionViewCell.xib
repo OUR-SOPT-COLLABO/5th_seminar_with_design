@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HHI-XO-AS6" customClass="StoreItemCollectionViewCell2" customModule="_th_Seminar_todayhouse_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WaN-6K-Bkr">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storeItemImg" translatesAutoresizingMaskIntoConstraints="NO" id="b1m-Uw-xn2">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b1m-Uw-xn2" firstAttribute="width" secondItem="WaN-6K-Bkr" secondAttribute="width" id="CEZ-op-0H7"/>
+                    <constraint firstItem="b1m-Uw-xn2" firstAttribute="leading" secondItem="WaN-6K-Bkr" secondAttribute="leading" id="E62-LR-Rfs"/>
+                    <constraint firstItem="b1m-Uw-xn2" firstAttribute="height" secondItem="WaN-6K-Bkr" secondAttribute="height" id="WmG-5C-eRt"/>
+                    <constraint firstAttribute="trailing" secondItem="b1m-Uw-xn2" secondAttribute="trailing" id="XgA-K4-n4T"/>
+                    <constraint firstAttribute="bottom" secondItem="b1m-Uw-xn2" secondAttribute="bottom" id="cHc-5D-Ce8"/>
+                    <constraint firstItem="b1m-Uw-xn2" firstAttribute="top" secondItem="WaN-6K-Bkr" secondAttribute="top" id="wpi-Qn-e2J"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="StoreCollectionImg" destination="b1m-Uw-xn2" id="NWS-pO-dWt"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="48"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="storeItemImg" width="375" height="346"/>
+    </resources>
+</document>

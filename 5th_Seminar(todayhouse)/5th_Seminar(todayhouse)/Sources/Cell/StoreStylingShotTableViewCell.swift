@@ -74,6 +74,8 @@ extension StoreStylingShotTableViewCell: UICollectionViewDataSource {
             cell.stylingpriviewImg.image = UIImage(named: stylingpriviewList[indexPath.row].stylingpriviewImg)
             return cell
             
+            
+            
         }
         return UICollectionViewCell()
     }
