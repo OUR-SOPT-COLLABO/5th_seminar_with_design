@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-   /* @IBOutlet weak var topCollectionView: UICollectionView!
+    @IBOutlet weak var topCollectionView: UICollectionView!
     @IBOutlet weak var storyCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
     
@@ -197,6 +197,6 @@ extension ViewController: UICollectionViewDelegate {
         default:
             return 10
         }
-    } // 셀 좌우 간격 조정*/
+    } // 셀 좌우 간격 조정
     
 }

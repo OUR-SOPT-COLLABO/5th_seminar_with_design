@@ -19,9 +19,9 @@ struct StoryData {
 class MainStoryCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "StoryCell"
     
-    @IBOutlet weak var storyImageView: UIImageView!
+    @IBOutlet weak var storyImageView: UIButton!
     
     func storySet(_ storyInformation: StoryData) {
-        storyImageView.image = storyInformation.storyImage
+        storyImageView.setImage(storyInformation.storyImage, for: .normal)
     }
 }

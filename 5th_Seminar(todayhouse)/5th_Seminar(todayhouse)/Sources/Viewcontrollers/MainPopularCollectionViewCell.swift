@@ -19,10 +19,10 @@ struct PopularData {
 class MainPopularCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "PopularCell"
     
-    @IBOutlet weak var popularImageView: UIImageView!
+    @IBOutlet weak var popularImageView: UIButton!
     
     func popularSet(_ popularInformation: PopularData) {
-        popularImageView.image = popularInformation.popularImage
+        popularImageView.setImage(popularInformation.popularImage, for: .normal)
         //ImageNumLabel.text = popularInformation.imageNum
     }
 }
