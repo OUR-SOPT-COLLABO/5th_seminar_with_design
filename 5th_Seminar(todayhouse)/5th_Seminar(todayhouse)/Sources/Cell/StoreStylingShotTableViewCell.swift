@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class StoreStylingShotTableViewCell: UITableViewCell {
     
     @IBOutlet weak var StylingshotCV: UICollectionView!
     @IBOutlet weak var stylingbigImg: UIImageView!
     
-    var stylingpriviewList: [Stylingpriviews] = []
+    //Cell에 들어갈 데이터저장배열
+    var stylingdataset : StoreReviewData!
+    var stylingdataList : [Data] = []
+    var stylingimgList : [Imgs] = []
+    var stylingreviewList : [Reviews] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,19 +30,47 @@ class StoreStylingShotTableViewCell: UITableViewCell {
         flowLayout.minimumInteritemSpacing = 8.0
         flowLayout.sectionInset.left = 15.0
         
-        
         self.StylingshotCV.collectionViewLayout = flowLayout
         self.StylingshotCV.showsHorizontalScrollIndicator = false
-        
-        // Comment if you set Datasource and delegate in .xib
-        self.StylingshotCV.dataSource = self
-        self.StylingshotCV.delegate = self
         
         // Register the xib for collection view cell
         let cellNib = UINib(nibName: "StylingshotCell", bundle: nil)
         self.StylingshotCV.register(cellNib, forCellWithReuseIdentifier: "stylingshotCell")
         
-        setStylingPriview()
+        //통신 부분
+        SellService.shared.getSell(){
+            responsedata in
+            switch responsedata {
+            case .success(let data):
+                
+                self.stylingdataset = data as? StoreReviewData
+                if let StylingdataList = data as? [Data]{
+                    self.stylingdataList = StylingdataList
+                }
+                else if let StylingimgList = data as? [Imgs]{
+                    self.stylingimgList = StylingimgList
+                }
+                else if let StylingreviewList = data as? [Reviews]{
+                    self.stylingreviewList = StylingreviewList
+                }
+                self.StylingshotCV.dataSource = self
+                
+                print("success")
+            case .requestErr(_):
+                print("request error")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail :
+                print("failure")
+            }
+        }
+        
+        // Comment if you set Datasource and delegate in .xib
+        //self.StylingshotCV.dataSource = self
+        self.StylingshotCV.delegate = self
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -46,32 +79,24 @@ class StoreStylingShotTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    private func setStylingPriview() {
-        
-        let styling1 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview2")
-        let styling2 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview3")
-        let styling3 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview4")
-        let styling4 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview5")
-        let styling5 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview2")
-        let styling6 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview3")
-        let styling7 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview4")
-        let styling8 = Stylingpriviews(stylingpriviewImg: "storeStylingPreview5")
-       
-        stylingpriviewList = [styling1, styling2, styling3, styling4, styling5, styling6, styling7, styling8]
-    }
-    
     
 }
 
 extension StoreStylingShotTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return stylingpriviewList.count
+        print(stylingdataList.count)
+        print(stylingimgList.count)
+        print(stylingreviewList.count)
+        return stylingimgList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = StylingshotCV.dequeueReusableCell(withReuseIdentifier: "stylingshotCell", for: indexPath) as? StylingshotCell {
             
-            cell.stylingpriviewImg.image = UIImage(named: stylingpriviewList[indexPath.row].stylingpriviewImg)
+            let reviewsImg = stylingimgList[indexPath.row]
+            
+            cell.stylingpriviewImg.imageFromUrl(reviewsImg.imgUrl, defaultImgPath: "http:// ~~ ")
+            //cell.stylingpriviewImg.image = UIImage(named: stylingpriviewList[indexPath.row].stylingpriviewImg)
             return cell
             
         }
@@ -83,4 +108,18 @@ extension StoreStylingShotTableViewCell: UICollectionViewDataSource {
 extension StoreStylingShotTableViewCell: UICollectionViewDelegate {
 }
 
-
+//Kingfisher로 이미지 url 받아오는 구문
+extension UIImageView {
+    public func imageFromUrl(_ urlString: String?, defaultImgPath : String) {
+        let defaultImg = UIImage(named: defaultImgPath)
+        if let url = urlString {
+            if url.isEmpty {
+                self.image = defaultImg
+            } else {
+                self.kf.setImage(with: URL(string: url), placeholder: defaultImg, options: [.transition(ImageTransition.fade(0.5))])
+            }
+        } else {
+            self.image = defaultImg
+        }
+    }
+}
