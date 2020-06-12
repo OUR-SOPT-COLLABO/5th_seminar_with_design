@@ -2,7 +2,7 @@
 //  MainTopCollectionViewCell.swift
 //  5th_Seminar(todayhouse)
 //
-//  Created by 김지현 on 2020/06/11.
+//  Created by 김지현 on 2020/06/12.
 //  Copyright © 2020 hjyoo. All rights reserved.
 //
 
