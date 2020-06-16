@@ -20,7 +20,7 @@ class RoomDetailCell: UICollectionViewCell {
         roomDetailImage.image = UIImage(named: roomDetail.imageName)
         roomDetailFName.text = roomDetail.factoryName
         roomDetailDesc.text = roomDetail.description
-        roomDetailPrice.text = roomDetail.price
+        roomDetailPrice.text = String(roomDetail.price)+" 원"
         
     }
 }

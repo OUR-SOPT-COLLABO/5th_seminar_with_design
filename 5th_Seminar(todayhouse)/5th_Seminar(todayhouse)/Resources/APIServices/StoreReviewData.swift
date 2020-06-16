@@ -12,7 +12,7 @@ struct StoreReviewData: Codable {
     var status: Int
     var success: Bool
     var message: String
-    var data: Data?
+    var data: storeData?
     
     enum CodingKeys: String, CodingKey {
         case status = "status"
@@ -26,11 +26,11 @@ struct StoreReviewData: Codable {
         status = (try? values.decode(Int.self, forKey: .status)) ?? -1
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message )) ?? ""
-        data = (try? values.decode(Data.self, forKey: .data )) ?? nil
+        data = (try? values.decode(storeData.self, forKey: .data )) ?? nil
     }
 }
 
-struct Data: Codable {
+struct storeData: Codable {
     var category : String
     var company : String
     var title : String

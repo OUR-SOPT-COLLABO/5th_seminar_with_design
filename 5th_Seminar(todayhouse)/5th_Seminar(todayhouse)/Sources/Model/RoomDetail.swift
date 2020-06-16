@@ -12,9 +12,9 @@ struct RoomDetail{
     var imageName: String
     var factoryName: String
     var description: String
-    var price: String
+    var price: Int
     
-    init(imageName: String, factoryName:String, description:String, price: String) {
+    init(imageName: String, factoryName:String, description:String, price: Int) {
         self.imageName = imageName
         self.factoryName = factoryName
         self.description = description

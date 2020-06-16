@@ -47,6 +47,7 @@ class PicViewViewController: UIViewController {
         setRoomInformations()
         picTableView.dataSource = self
         picTableView.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     

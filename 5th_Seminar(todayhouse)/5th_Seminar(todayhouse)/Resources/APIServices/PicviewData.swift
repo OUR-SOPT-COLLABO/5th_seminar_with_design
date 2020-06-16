@@ -32,7 +32,7 @@ struct PicviewData: Codable{
 
 struct DetailData: Codable{
     var imgUrl: String
-    var fname: String
-    var desc: String
-    var price: String
+    var company: String
+    var price: Int
+    var content: String
 }

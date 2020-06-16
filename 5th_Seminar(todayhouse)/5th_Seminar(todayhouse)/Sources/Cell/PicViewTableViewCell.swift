@@ -31,6 +31,7 @@ class PicViewTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         setRoomDetails()
+        
         self.roomDetailCollectionView.delegate = self
         self.roomDetailCollectionView.dataSource = self
     }
@@ -52,11 +53,33 @@ class PicViewTableViewCell: UITableViewCell {
     }
     
     func setRoomDetails(){
-        let detail1 = RoomDetail(imageName: "picviewImgProduct1", factoryName: "체어 팩토리", description: "딱딱해 보이지만 생각보다 편안한 의자", price: "26,000원")
-        let detail2 = RoomDetail(imageName: "picviewImgProduct2", factoryName: "체어 팩토리", description: "딱딱해 보이지만 생각보다 편안한 의자", price: "26,000원")
-        let detail3 = RoomDetail(imageName: "picviewImgProduct3", factoryName: "체어 팩토리", description: "딱딱해 보이지만 생각보다 편안한 의자", price: "26,000원")
         
-        roomDetailList = [detail1, detail2, detail3]
+        PicviewService.shared.getData(){ NetworkResult in
+            switch NetworkResult {
+            case .success(let data):
+                guard let data = data as? [DetailData] else {return}
+                print("@@@@@@data@@@@@@")
+                print(data)
+                let detail1 = RoomDetail(imageName: "picviewImgProduct1", factoryName: data[0].company, description: data[0].content, price: data[0].price)
+                let detail2 = RoomDetail(imageName: "picviewImgProduct2", factoryName: data[1].company, description: data[1].content, price: data[1].price)
+                let detail3 = RoomDetail(imageName: "picviewImgProduct3", factoryName: data[1].company, description: data[1].content, price: data[1].price)
+                self.roomDetailList = [detail1, detail2, detail3]
+                self.roomDetailCollectionView.reloadData()
+
+            case .requestErr(_):
+                print("Request error@@")
+            case .pathErr:
+                print("path error")
+            case .serverErr:
+                print("server error")
+            case .networkFail:
+                print("network error")
+            }
+        }
+//        let detail1 = RoomDetail(imageName: "picviewImgProduct1", factoryName: "체어 팩토리", description: "딱딱해 보이지만 생각보다 편안한 의자", price: 26000)
+//        let detail2 = RoomDetail(imageName: "picviewImgProduct2", factoryName: "체어 팩토리", description: "딱딱해 보이지만 생각보다 편안한 의자", price: 26000)
+//        let detail3 = RoomDetail(imageName: "picviewImgProduct3", factoryName: "체어 팩토리", description: "딱딱해 보이지만 생각보다 편안한 의자", price: 26000)
+//        roomDetailList = [detail1, detail2, detail3]
     }
     
 
