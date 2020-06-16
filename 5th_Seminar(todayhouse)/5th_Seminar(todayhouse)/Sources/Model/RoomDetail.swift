@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 struct RoomDetail{
-    var imageName: String
+    var imageUrl: String
     var factoryName: String
     var description: String
     var price: Int
     
-    init(imageName: String, factoryName:String, description:String, price: Int) {
-        self.imageName = imageName
+    init(imageUrl: String, factoryName:String, description:String, price: Int) {
+        self.imageUrl = imageUrl
         self.factoryName = factoryName
         self.description = description
         self.price = price

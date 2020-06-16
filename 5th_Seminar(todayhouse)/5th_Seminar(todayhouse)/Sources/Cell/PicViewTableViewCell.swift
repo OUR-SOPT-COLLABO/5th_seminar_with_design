@@ -60,10 +60,13 @@ class PicViewTableViewCell: UITableViewCell {
                 guard let data = data as? [DetailData] else {return}
                 print("@@@@@@data@@@@@@")
                 print(data)
-                let detail1 = RoomDetail(imageName: "picviewImgProduct1", factoryName: data[0].company, description: data[0].content, price: data[0].price)
-                let detail2 = RoomDetail(imageName: "picviewImgProduct2", factoryName: data[1].company, description: data[1].content, price: data[1].price)
-                let detail3 = RoomDetail(imageName: "picviewImgProduct3", factoryName: data[1].company, description: data[1].content, price: data[1].price)
-                self.roomDetailList = [detail1, detail2, detail3]
+                for data in data{
+                    self.roomDetailList.append(RoomDetail(imageUrl: data.imgUrl, factoryName: data.company, description: data.content, price: data.price))
+                }
+//                let detail1 = RoomDetail(imageUrl: "picviewImgProduct1", factoryName: data[0].company, description: data[0].content, price: data[0].price)
+//                let detail2 = RoomDetail(imageUrl: "picviewImgProduct2", factoryName: data[1].company, description: data[1].content, price: data[1].price)
+//                let detail3 = RoomDetail(imageUrl: "picviewImgProduct3", factoryName: data[1].company, description: data[1].content, price: data[1].price)
+//                self.roomDetailList = [detail1, detail2, detail3]
                 self.roomDetailCollectionView.reloadData()
 
             case .requestErr(_):

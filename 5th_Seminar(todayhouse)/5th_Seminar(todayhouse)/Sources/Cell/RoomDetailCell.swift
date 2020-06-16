@@ -17,7 +17,10 @@ class RoomDetailCell: UICollectionViewCell {
     @IBOutlet weak var roomDetailPrice: UILabel!
     
     func set(roomDetail: RoomDetail){
-        roomDetailImage.image = UIImage(named: roomDetail.imageName)
+        let url = URL(string: roomDetail.imageUrl)
+        let data = try? Data(contentsOf: url!)
+        
+        roomDetailImage.image = UIImage(data: data!)
         roomDetailFName.text = roomDetail.factoryName
         roomDetailDesc.text = roomDetail.description
         roomDetailPrice.text = String(roomDetail.price)+" 원"
